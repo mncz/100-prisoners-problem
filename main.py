@@ -5,7 +5,6 @@ PRISONERS = 100
 TRIALS = 10000
 WAIT = 0.0001
 
-# Probability of success ≈ 0.0000000000000000000000000000008%
 def no_strategy():
     prison = random.sample(range(1, PRISONERS + 1), PRISONERS)
     arrange = random.sample(range(1, PRISONERS + 1), PRISONERS)
@@ -26,7 +25,6 @@ def no_strategy():
 
     return 1
 
-# Probability of success ≈ 31%
 def solution():
     prison = random.sample(range(1, PRISONERS + 1), PRISONERS)
     arrange = random.sample(range(1, PRISONERS + 1), PRISONERS)
@@ -57,7 +55,7 @@ def main():
     successes = 0
 
     for i in range(1, TRIALS + 1):
-        
+
         # if no_strategy():
         if solution():
             successes += 1
