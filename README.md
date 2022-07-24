@@ -6,7 +6,11 @@
 - - -
 
 #### `no_strategy()`
-Every prisoner selects randomly 50 boxes, which leads to a success rate of  $ (\frac{1}{2})^{100} \approx 0.0000000000000000000000000000008 $%.
+Every prisoner selects randomly 50 boxes, which leads to a success rate of 0.0000000000000000000000000000008%.
 
 #### `solution()`
-Each prisoner starts by opening the box with his own number. If it contains his number he is done, otherwise, he will open the box with the number that he found before and so on. Surprisingly, the probability of success is more than  $ 30 $%.
+Each prisoner starts by opening the box with his own number. If it contains his number he is done, otherwise, he will open the box with the number that he found before and so on. Surprisingly, the probability of success is more than 30%.
+
+- - -
+
+[Run it on Replit!](https://replit.com/@mncz/100-prisoners-problem#main.py)
